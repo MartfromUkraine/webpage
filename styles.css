@@ -22,13 +22,22 @@ a:visited {color: grey;}
 
 
 .photo {
-    width: 200px;
+    width: 220px;
     height: 180px;
     border-radius: 28px;
     box-shadow: 4px 4px 14px rgb(0 0 0 /50%);
 }
 
 .info {margin-bottom: 10px; display: flex;}
+
+/*@media  - это описание правил (с условием выполнения-в скобках)*/
+@media (max-width: 700px) {
+    .info {
+        text-align: center; 
+        display: block; /*когда ширина окна меньше 700- перемещаем текс ПОД фото*/
+    }
+}
+
 .info-text {margin-left: 40px;}
 
 .info p {
@@ -70,21 +79,14 @@ margin-bottom: 20px;
 border-radius: 20px;
 }
 
-.list {
-padding: 0 20px;
-}
+.list {padding: 0 20px;}
 .list li {
     color: #86898f;
     margin-bottom: 10px;
 }
 
-.table {
-width: 100%;
-
-}
-.table td {
-padding-bottom: 10px;
-}
+.table { width: 100%;}
+.table td { padding:  10px;}
 
 /* .table td:nth-child(2) {color: red;}
 .table tr:nth-child(2){color: green} */
